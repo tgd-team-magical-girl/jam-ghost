@@ -1,0 +1,35 @@
+[tool.briefcase]
+project_name = "magical-girl-boss-fight"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://example.com/magicalgirlbossfight"
+license = "Proprietary"
+author = 'Team Magical Girl'
+author_email = "team@example.com"
+
+[tool.briefcase.app.magicalgirlbossfight]
+formal_name = "magical-girl-boss-fight"
+description = "A game jam game of Magical Girls and big boss fights."
+icon = "src/magicalgirlbossfight/resources/magicalgirlbossfight"
+sources = ['src/magicalgirlbossfight']
+requires = [
+    'ppb~=0.10.0',
+]
+
+
+[tool.briefcase.app.magicalgirlbossfight.macOS]
+requires = []
+
+[tool.briefcase.app.magicalgirlbossfight.linux]
+requires = []
+system_requires = []
+
+[tool.briefcase.app.magicalgirlbossfight.windows]
+requires = []
+
+# Mobile deployments
+[tool.briefcase.app.magicalgirlbossfight.iOS]
+requires = []
+
+[tool.briefcase.app.magicalgirlbossfight.android]
+requires = []
