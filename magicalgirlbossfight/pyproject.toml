@@ -13,7 +13,7 @@ description = "A game jam game of Magical Girls and big boss fights."
 icon = "src/magicalgirlbossfight/resources/magicalgirlbossfight"
 sources = ['src/magicalgirlbossfight']
 requires = [
-    'ppb~=0.10.0',
+    'ppb~=0.12.0',
 ]
 
 
