@@ -2,8 +2,7 @@
 A game jam game of Magical Girls and big boss fights.
 """
 import ppb
-import players
-from magicalgirlbossfight.players import Player
+from .players import Player
 
 class magicalgirlbossfight(ppb.BaseScene):
     def __init__(self, **props):

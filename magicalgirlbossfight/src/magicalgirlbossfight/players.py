@@ -1,14 +1,18 @@
 import ppb
 from ppb import keycodes
-from ppb.events import KeyPressed, KeyReleased
+from ppb.events import KeyPressed, KeyReleased, Update
+
 
 class Player(ppb.Sprite):
 
-
-    def __init__(self,image=ppb.Image('magicalgirlbossfight/resources/magicalgirlbossfight.png'), position=ppb.Vector(0, 0)):
+    def __init__(self, image=ppb.Image('magicalgirlbossfight/resources/magicalgirlbossfight.png'),
+                 position=ppb.Vector(0, 0)):
+        self.image = image
+        self.position = position
+        self.move_vector = ppb.Vector(0, 0)
         super().__init__()
 
-    def on_update(self,  event: ppb.events.Update, signal):
+    def on_update(self, event: ppb.events.Update, signal):
         self.position += self.move_vector
 
     def on_key_pressed(self, event: ppb.events.KeyPressed, signal):
