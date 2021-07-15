@@ -4,13 +4,9 @@ from ppb.events import KeyPressed, KeyReleased, Update
 
 
 class Player(ppb.Sprite):
-
-    def __init__(self, image=ppb.Image('magicalgirlbossfight/resources/magicalgirlbossfight.png'),
-                 position=ppb.Vector(0, 0)):
-        self.image = image
-        self.position = position
-        self.move_vector = ppb.Vector(0, 0)
-        super().__init__()
+    image = ppb.Image('magicalgirlbossfight/resources/magicalgirlbossfight.png')
+    position = ppb.Vector(0, 0)
+    move_vector = ppb.Vector(0, 0)
 
     def on_update(self, event: ppb.events.Update, signal):
         self.position += self.move_vector
